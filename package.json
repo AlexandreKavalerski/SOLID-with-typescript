@@ -1,0 +1,26 @@
+{
+  "name": "solid-with-typescript",
+  "version": "1.0.0",
+  "description": "Learning and practicing SOLID principles using TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreKavalerski/SOLID-with-typescript.git"
+  },
+  "author": "Alexandre Kavalerski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandreKavalerski/SOLID-with-typescript/issues"
+  },
+  "homepage": "https://github.com/AlexandreKavalerski/SOLID-with-typescript#readme",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
+    "typescript": "^4.3.5"
+  },
+  "babel": {
+    "presets": ["@babel/preset-typescript"]
+  }
+}
