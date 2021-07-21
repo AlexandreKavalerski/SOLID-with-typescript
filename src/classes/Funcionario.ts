@@ -18,12 +18,8 @@ export default class Funcionario {
     return this.nome;
   }
 
-  reajustarSalario(aumento: number) {
-    const percentualReajuste = aumento / this.salario;
-    if (percentualReajuste > 0.4) {
-      throw new Error("O reajuste não pode ser maior que 40% do salário");
-    }
-    this.salario += aumento;
+  reajustarSalario(novoSalario: number) {
+    this.salario = novoSalario;
     this.dataUltimoReajuste = new Date();
   }
 
