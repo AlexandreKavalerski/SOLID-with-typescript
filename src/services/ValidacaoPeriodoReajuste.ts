@@ -2,7 +2,7 @@ import Funcionario from "../classes/Funcionario";
 import ValidacaoReajuste from "./ValidacaoReajuste";
 
 export default class ValidacaoPercentualReajuste implements ValidacaoReajuste {
-  reajustar(funcionario: Funcionario, aumento: number) {
+  validar(funcionario: Funcionario, aumento: number) {
     const dataUltimoReajuste: Date = funcionario.getDataUltimoReajuste();
     const dataAtual: Date = new Date();
 
