@@ -6,14 +6,16 @@ export default class ValidacaoPeriodoReajuste implements ValidacaoReajuste {
     const dataUltimoReajuste: Date = funcionario.getDataUltimoReajuste();
     const dataAtual: Date = new Date();
 
-    const mesesDesdeUltimoReajuste: number =
-      dataUltimoReajuste.getMonth() -
-      dataAtual.getMonth() +
-      12 * (dataUltimoReajuste.getFullYear() - dataAtual.getFullYear());
-    if (mesesDesdeUltimoReajuste < 6) {
-      throw new Error(
-        "O reajuste não pode acontecer em um intervalo menor que 6 meses"
-      );
+    if (dataUltimoReajuste) {
+      const mesesDesdeUltimoReajuste: number =
+        dataUltimoReajuste.getMonth() -
+        dataAtual.getMonth() +
+        12 * (dataUltimoReajuste.getFullYear() - dataAtual.getFullYear());
+      if (mesesDesdeUltimoReajuste < 6) {
+        throw new Error(
+          "O reajuste não pode acontecer em um intervalo menor que 6 meses"
+        );
+      }
     }
   }
 }
