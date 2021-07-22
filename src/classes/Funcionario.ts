@@ -26,4 +26,16 @@ export default class Funcionario {
   getSalario() {
     return this.salario;
   }
+
+  getDataUltimoReajuste() {
+    return this.dataUltimoReajuste;
+  }
+
+  getCpf() {
+    return this.cpf;
+  }
+
+  getCargo() {
+    return this.cargo;
+  }
 }
