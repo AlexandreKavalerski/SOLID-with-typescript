@@ -38,4 +38,8 @@ export default class Funcionario {
   getCargo() {
     return this.cargo;
   }
+
+  promover(novoCargo: Cargo) {
+    this.cargo = novoCargo;
+  }
 }
